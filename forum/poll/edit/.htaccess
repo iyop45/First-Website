@@ -1,0 +1,7 @@
+RewriteEngine on
+Options -MultiViews
+
+RewriteRule    ^r=([0-9]+)/(.*)/(.*)?$   ?type=reply&id=$1&timeSinceLoad=$2&token=$3    [NC,L]
+RewriteRule    ^p=([0-9]+)/(.*)/(.*)?$   ?type=post&id=$1&timeSinceLoad=$2&token=$3    [NC,L]
+RewriteRule    ^t=([0-9]+)/(.*)/(.*)?$   ?type=topic&id=$1&timeSinceLoad=$2&token=$3    [NC,L]
+RewriteRule    ^c=([0-9]+)/(.*)/(.*)?$   ?type=category&id=$1&timeSinceLoad=$2&token=$3    [NC,L]

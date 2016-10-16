@@ -1,0 +1,22 @@
+RewriteEngine on
+Options -MultiViews
+
+RewriteRule    ^r=([0-9]+)/.*/?$   ?reply_id=$1    [NC,L]
+RewriteRule    ^re=([0-9]+)/?$   ?reply_id=$1&edit=1    [NC,L]
+
+RewriteRule    ^p=([0-9]+)/page=([0-9]+)/?$   ?post_id=$1&page=$2    [NC,L]
+RewriteRule    ^p=([0-9]+)/.*/?$   ?post_id=$1    [NC,L]
+RewriteRule    ^pe=([0-9]+)/?$   ?post_id=$1&edit=1    [NC,L]
+RewriteRule    ^pe=([0-9]+)/([a-z-_0-9]+)?$   ?post_id=$1&edit=1&edit_id=$2    [NC,L]
+
+RewriteRule    ^t=([0-9]+)/page=([0-9]+)/?$   ?topic_id=$1&page=$2    [NC,L]
+RewriteRule    ^t=([0-9]+)/.*/?$   ?topic_id=$1    [NC,L]
+RewriteRule    ^te=([0-9]+)/?$   ?topic_id=$1&edit=1    [NC,L]
+RewriteRule    ^te=([0-9]+)/([a-z-_0-9]+)?$   ?topic_id=$1&edit=1&edit_id=$2     [NC,L]
+
+RewriteRule    ^c=([0-9]+)/page=([0-9]+)/?$   ?category_id=$1&page=$2    [NC,L]
+RewriteRule    ^c=([0-9]+)/.*/?$   ?category_id=$1    [NC,L]
+RewriteRule    ^ce=([0-9]+)/?$   ?category_id=$1&edit=1    [NC,L]
+RewriteRule    ^ce=([0-9]+)/([a-z-_0-9]+)?$   ?category_id=$1&edit=1&edit_id=$2    [NC,L]
+
+RewriteRule    ^page=([0-9]+)/?$   ?page=$1   [NC,L]

@@ -1,0 +1,7 @@
+RewriteEngine on
+Options -MultiViews
+
+RewriteRule    ^r=([0-9]+)/?$   ?post_id=$1    [NC,L]
+RewriteRule    ^p=([0-9]+)/?$   ?topic_id=$1    [NC,L]
+RewriteRule    ^t=([0-9]+)/?$   ?category_id=$1    [NC,L]
+RewriteRule    ^c/?$   ?newCategory=1    [NC,L]

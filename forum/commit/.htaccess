@@ -1,0 +1,5 @@
+RewriteEngine on
+Options -MultiViews
+
+RewriteRule    ^t=([0-9]+)/(.*)?$   ?topic_id=$1&token=$2    [NC,L]
+RewriteRule    ^c=([0-9]+)/(.*)?$   ?category_id=$1&token=$2    [NC,L]

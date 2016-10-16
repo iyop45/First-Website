@@ -1,0 +1,8 @@
+RewriteEngine on
+Options -MultiViews
+
+RewriteRule    ^c=([0-9]+)/?$   ?tutorial_id=$1    [NC,L]
+RewriteRule    ^c=([0-9]+)/([a-z-_0-9]+)?$   ?tutorial_id=$1&edit_id=$2     [NC,L]
+
+RewriteRule    ^g=([0-9]+)/?$   ?group_id=$1    [NC,L]
+RewriteRule    ^g=([0-9]+)/([a-z-_0-9]+)?$   ?group_id=$1&edit_id=$2    [NC,L]
