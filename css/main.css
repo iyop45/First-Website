@@ -1,0 +1,56 @@
+<?php
+	header("Content-type: text/css; charset: UTF-8");
+	
+	require("/home/content/99/11499199/html/lib/Smarty.class.php");
+	
+	$tpl = new Smarty;
+	
+	// Defaults
+	$page = 'global';
+	$tpl->assign("darkColor",'#669');
+	$tpl->assign("lightColor",'#99c');
+	
+	// Fixed banner
+	$tpl->assign("fixedBanner",true);
+	
+	$pages = array('global','base','index');
+	$themes = array('default','purple','red','green','blue','yellow');
+	
+	if(isset($_GET['page'])){
+		if(in_array($_GET['page'],$pages)){
+			$page = $_GET['page'];
+		}
+	}
+
+	if(isset($_GET['theme'])){
+		if(in_array($_GET['theme'],$themes)){
+			switch($_GET['theme']){
+				case 'red':
+					$tpl->assign("darkColor",'#966');
+					$tpl->assign("lightColor",'#c99');
+					break;
+				case 'green':
+					$tpl->assign("darkColor",'#696');
+					$tpl->assign("lightColor",'#9c9');
+					break;
+				case 'blue':
+					$tpl->assign("darkColor",'#699');
+					$tpl->assign("lightColor",'#9cc');
+					break;
+				case 'yellow':
+					$tpl->assign("darkColor",'#996');
+					$tpl->assign("lightColor",'#CC9');
+					break;
+				case 'purple':
+				case 'default':
+				default:
+					$tpl->assign("darkColor",'#669');
+					$tpl->assign("lightColor",'#99c');
+			}
+		}
+	}
+	
+	$tpl->assign("page",$page);
+	
+	$tpl->display('templates/main.tpl');
+?>
