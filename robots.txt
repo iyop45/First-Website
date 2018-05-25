@@ -1,23 +1,23 @@
-User-agent: *
-Disallow: 404.html
-Disallow: /register.php
-Disallow: /login.php
-Disallow: /register
-Disallow: /login
-
-Disallow: /help/terms/
-Disallow: /help/privacy/
-
-Disallow: /help/terms/index.php
-Disallow: /help/privacy/index.php
-
-Disallow: url.php
-Disallow: url
-
-Disallow: /l33t/
-Disallow: /l33t/index.php
-
-Disallow: /unit_testing/
-Disallow: /unit_testing/index.php
-
+User-agent: *
+Disallow: 404.html
+Disallow: /register.php
+Disallow: /login.php
+Disallow: /register
+Disallow: /login
+
+Disallow: /help/terms/
+Disallow: /help/privacy/
+
+Disallow: /help/terms/index.php
+Disallow: /help/privacy/index.php
+
+Disallow: url.php
+Disallow: url
+
+Disallow: /l33t/
+Disallow: /l33t/index.php
+
+Disallow: /unit_testing/
+Disallow: /unit_testing/index.php
+
 Disallow: changeTheme.php
