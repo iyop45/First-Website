@@ -1,4 +1,4 @@
-# techberry
+# First major website project.
 
 ## Features
 
