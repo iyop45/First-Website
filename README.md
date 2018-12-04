@@ -1,9 +1,13 @@
-# First major website project.
+# First web development project
+
+I worked on this project throughout my A-levels and developed experience with relational database, client side scripting, and server side programming. I specifically developed an interest for databases and use for emulating fluid real-time applications.
+
+The following is a non-exhaustive list of the features that were implemented.
 
 ## Features
 
 1. Forum
-  -  Moderation
+  - Moderation
   - Categories / Topics / Posts / Replies
   - Edits with moderation queue
   - Thanking system
@@ -35,6 +39,3 @@
 
 7. 
   - Admin platform for managing users / database
-
-
-And lots lots more that I have missed
