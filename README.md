@@ -2,6 +2,8 @@
 
 I worked on this project throughout my A-levels and developed experience with relational database, client side scripting, and server side programming. I specifically developed an interest for databases and use for emulating fluid real-time applications.
 
+I started the project as a relatively new programmer and so the various modern software development techniques were only later integrated. It is for this reason that the code is not very structured or maintainable. However, it was great fun at the time and an invaluable learning experience.
+
 The following is a non-exhaustive list of the features that were implemented.
 
 ## Features
